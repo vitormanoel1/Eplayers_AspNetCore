@@ -1,0 +1,13 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Welcome</h1>
+    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+
+    @* chamamos a tag(a), colocamos uma classe de navegação do bootstraap (class="navbar-bradn"), 
+    especificamos qual controllador estamos chamando (asp-controller="Equipe"), 
+    e qual  vai ser a ação que vai ser executada ao aperta no link (asp-action="Index")*@
+    <a class="navbar-bradn" asp-area="" asp-controller="Equipe" asp-action="Index">Equipes</a>
+</div>

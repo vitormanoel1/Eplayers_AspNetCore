@@ -1,0 +1,48 @@
+@* para chamar funções,classes ou métodos precisa usar o (@)  *@
+@model Equipe
+@{
+    // alterando o titulo da página
+    ViewData["Title"] = "Equipes";
+}
+
+@* criamos o formulário de cadastro *@
+@* (POST) = é usado quando vai enviar informações *@
+<form method="POST" action='@Url.Action("Cadastrar")' enctype="multipart/form-data">
+    <label>ID</label>
+    <input type="text" name="IdEquipe">
+
+    <label>Nome</label>
+    <input type="text" name="Nome">
+
+    <label>Imagem</label>
+    <input type="file" name="Imagem">
+
+    <button type="submit">Cadastrar</button>
+</form>
+
+@* criamos uma tebela para visualizar o cadastro *@
+<table class="table table-striped table-responsive">
+    <thead>
+        @* primeira coluna mostra (ID), segunda coluna mostra (Nome) e
+        terceira coluna mostra (Imagem) *@
+        <th>ID</th>
+        <th>Nome</th>
+        <th>Imagem</th>
+        <th>Ações</th>
+    </thead>
+    @* (tbody)corpo da tabela onde as informações irão ser exibidas *@
+    <tbody>
+        @* quando se trabalha com (razor) podemos criar funções através do (@) *@
+        @foreach (Equipe equipe in ViewBag.Equipes)
+        {
+            @*dentro do corpo da tabela (tbody) criamos um (tr) = uma linha 
+            e prenchemos com (td) = dados da tabela *@
+            <tr>
+                    <td>@equipe.IdEquipe</td>
+                    <td>@equipe.Nome</td>
+                    <td><img src="/img/Equipes/@equipe.Imagem" alt="Imagem da equipe @equipe.Nome" width="40"></td>
+                    <td><a asp-area="Link para excluir uma equipe" asp-controller="Equipe" asp-action="Excluir" asp-route-id="@equipe.IdEquipe">Excluir</a></td>
+            </tr>
+        }
+    </tbody>
+</table>
