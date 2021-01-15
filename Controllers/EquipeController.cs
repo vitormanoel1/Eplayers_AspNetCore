@@ -60,7 +60,7 @@ namespace Eplayers_AspNetCore.Controllers
                                                     // localgot:5001     +                + Equipes + equipe.jpg 
                     var path = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot/img", folder, file.FileName );
                     
-                    using (var manipulacao =  new FileStream(path, FileMode.Create))
+                    using (var stream =  new FileStream(path, FileMode.Create))
                     {
                         // salvamos o arquivo no caminho especificado
                         file.CopyTo(stream);

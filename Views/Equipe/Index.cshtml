@@ -5,19 +5,30 @@
     ViewData["Title"] = "Equipes";
 }
 
+<div class="titulo_pagina">
+    <h1>cadastro de jogador</h1>
+</div>
+
 @* criamos o formulário de cadastro *@
 @* (POST) = é usado quando vai enviar informações *@
-<form method="POST" action='@Url.Action("Cadastrar")' enctype="multipart/form-data">
-    <label>ID</label>
-    <input type="text" name="IdEquipe">
+<form class="cadastro" method="POST" action='@Url.Action("Cadastrar")' enctype="multipart/form-data">
 
-    <label>Nome</label>
-    <input type="text" name="Nome">
+    <div class="campo">
+        <label>ID</label>
+        <input type="text" name="IdEquipe">
+    </div>
 
-    <label>Imagem</label>
-    <input type="file" name="Imagem">
+    <div class="campo">
+        <label>Nome</label>
+        <input type="text" name="Nome">
+    </div>
 
-    <button type="submit">Cadastrar</button>
+    <div class="campo">
+        <label>Imagem</label>
+        <input type="file" name="Imagem">
+    </div>
+
+    <button class="gradient btn" type="submit">Cadastrar</button>
 </form>
 
 @* criamos uma tebela para visualizar o cadastro *@

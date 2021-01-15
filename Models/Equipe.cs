@@ -8,6 +8,7 @@ namespace Eplayers_AspNetCore.Models
     public class Equipe : EPlayersBase, IEquipe
     {
         // ID indentificador
+        // atributos
         public int IdEquipe { get; set; }
         public string Nome { get; set; }
         public string Imagem { get; set; }
