@@ -1,6 +1,5 @@
 C:\Users\winicius\Documents\SENAI_Atividades\Back-end\Eplayers_AspNetCore\bin\Debug\netcoreapp3.1\appsettings.Development.json
 C:\Users\winicius\Documents\SENAI_Atividades\Back-end\Eplayers_AspNetCore\bin\Debug\netcoreapp3.1\appsettings.json
-C:\Users\winicius\Documents\SENAI_Atividades\Back-end\Eplayers_AspNetCore\bin\Debug\netcoreapp3.1\Properties\launchSettings.json
 C:\Users\winicius\Documents\SENAI_Atividades\Back-end\Eplayers_AspNetCore\bin\Debug\netcoreapp3.1\Eplayers_AspNetCore.exe
 C:\Users\winicius\Documents\SENAI_Atividades\Back-end\Eplayers_AspNetCore\bin\Debug\netcoreapp3.1\Eplayers_AspNetCore.deps.json
 C:\Users\winicius\Documents\SENAI_Atividades\Back-end\Eplayers_AspNetCore\bin\Debug\netcoreapp3.1\Eplayers_AspNetCore.runtimeconfig.json
@@ -70,3 +69,5 @@ C:\Users\fic\Documents\EPlayers_AspNetCore\Eplayers_AspNetCore\obj\Debug\netcore
 C:\Users\fic\Documents\EPlayers_AspNetCore\Eplayers_AspNetCore\obj\Debug\netcoreapp3.1\Eplayers_AspNetCore.dll
 C:\Users\fic\Documents\EPlayers_AspNetCore\Eplayers_AspNetCore\obj\Debug\netcoreapp3.1\Eplayers_AspNetCore.pdb
 C:\Users\fic\Documents\EPlayers_AspNetCore\Eplayers_AspNetCore\obj\Debug\netcoreapp3.1\Eplayers_AspNetCore.csproj.CopyComplete
+C:\Users\winicius\Documents\SENAI_Atividades\Back-end\Eplayers_AspNetCore\obj\Debug\netcoreapp3.1\scopedcss\bundle\Eplayers_AspNetCore.styles.css
+C:\Users\winicius\Documents\SENAI_Atividades\Back-end\Eplayers_AspNetCore\obj\Debug\netcoreapp3.1\Razor\Views\Jogador\Index.cshtml.g.cs

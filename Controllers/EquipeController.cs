@@ -14,7 +14,6 @@ namespace Eplayers_AspNetCore.Controllers
         // então o objeto (equipeModel) vai ter a estrutura de (Equipe).
         // instanciando uma classe da pasta models
         Equipe equipeModel = new Equipe();
-        private Stream stream;
 
         // (index) vai listar as equipes , e retorna uma (View).
         // (IActionResult = Resultado da ação da Interface).
@@ -65,6 +64,7 @@ namespace Eplayers_AspNetCore.Controllers
                         // salvamos o arquivo no caminho especificado
                         file.CopyTo(stream);
                     }
+                    
 
                     criarEquipe.Imagem = file.FileName;
                 }
@@ -89,7 +89,7 @@ namespace Eplayers_AspNetCore.Controllers
         // http://localhost:5001/Equipe/2
         [Route("{id}")]
         // criamos o método de excluir
-        public IActionResult Ecluir(int IdEquipe)
+        public IActionResult Excluir(int IdEquipe)
         {
             equipeModel.Delete(IdEquipe);
 

@@ -125,7 +125,6 @@ ul{
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#432b5f', endColorstr='#1e1c21', GradientType=0 );
 }
 .ao_vivo, .em_breve{
-    border-left: solid 1px var(--purple);
     color: white;
     padding: 0 30px;
     display: flex;
@@ -134,8 +133,8 @@ ul{
 }
 
 .partida img{
-    width: 40px;
-    padding: 0px 15px;
+    width: 35px;
+    padding: 0px 3px;
 }
 
 .partida{

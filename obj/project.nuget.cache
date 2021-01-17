@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "UUpL0R82dmxS/8u/S/CuTvSEBq4kd4CXRB3rZlLPyN+C2lTGfjdDR6UcY9avARV5RWSsdcMumkYeNJ7GP20vGA==",
+  "dgSpecHash": "ohC/D7ygJ8NZTNBjRc5a1X7FDrYcrKGDcpyER925xdxVHZDE8ljCfVAjl6vSgiNrw3NW1HAiSXaAN+YlJ9kNHQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\winicius\\Documents\\SENAI_Atividades\\Back-end\\Eplayers_AspNetCore\\Eplayers_AspNetCore.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\winicius\\.nuget\\packages\\microsoft.netcore.app.host.win-x86\\3.1.11\\microsoft.netcore.app.host.win-x86.3.1.11.nupkg.sha512"
+  ],
   "logs": []
 }
