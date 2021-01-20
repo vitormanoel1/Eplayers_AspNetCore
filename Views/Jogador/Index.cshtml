@@ -6,11 +6,17 @@
     <h1>cadastro de jogadores</h1>
 </div>
 
-<form class="cadastro" method="POST" action='@Url.Action("Cadastrar")' enctype="multipart/form-data">
+<form method="POST" action='@Url.Action("Cadastrar")' class="cadastro">
 
     <div class="campo">
         <label>IdEquipe</label>
-        <input type="text" name="IdEquipe">
+        <select type="IdEquipe" name="IdEquipe">
+            <option value="0">Selecione uma opção abaixo...</option>
+            @foreach (var item in ViewBag.Equipes)
+            {
+                <option value="@item.IdEquipe">@item.Nome</option>
+            }
+        </select>
     </div>
 
     <div class="campo">
@@ -56,7 +62,7 @@
                     <td>@jogador.Email</td>
                     <td>@jogador.Senha</td>
                     <td>@jogador.IdJogador</td>
-                    <td><a asp-area="Link para excluir um jogador" asp-controller="Jogador" asp-action="Excluir" asp-route-id="@jogador.IdJogador">Excluir</a></td>
+                    <td><a asp-area="" asp-controller="Jogador" asp-action="Excluir" asp-route-id="@jogador.IdJogador">Excluir</a></td>
             </tr>
         }
     </tbody>

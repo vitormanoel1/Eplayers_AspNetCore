@@ -10,9 +10,12 @@ namespace Eplayers_AspNetCore.Controllers
     {
         Jogador jogadorModel = new Jogador();
 
+        Equipe equipeModel = new Equipe();
+
         [Route("Listar")]
         public IActionResult Index()
         {
+            ViewBag.Equipes = equipeModel.ReadAll();
             ViewBag.Jogadores = jogadorModel.ReadAll();
             return View();
         }
@@ -35,14 +38,14 @@ namespace Eplayers_AspNetCore.Controllers
             return LocalRedirect("~/Jogador/Listar");
         }
 
-        [Route("{id}")]
+        [Route("Jogador/{Id}")]
         public IActionResult Excluir(int IdJogador)
         {
             jogadorModel.Delete(IdJogador);
 
             ViewBag.Jogadores = jogadorModel.ReadAll();
 
-            return LocalRedirect("~/Jogador/Listar");
+            return LocalRedirect("~/Jogador");
         }
     }
 }

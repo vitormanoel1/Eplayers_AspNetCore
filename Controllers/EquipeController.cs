@@ -87,7 +87,7 @@ namespace Eplayers_AspNetCore.Controllers
         }
 
         // http://localhost:5001/Equipe/2
-        [Route("{id}")]
+        [Route("Equipe/{Id}")]
         // criamos o método de excluir
         public IActionResult Excluir(int IdEquipe)
         {
@@ -95,7 +95,7 @@ namespace Eplayers_AspNetCore.Controllers
 
             ViewBag.Equipes = equipeModel.ReadAll();
 
-            return LocalRedirect("~/Equipes/Listar");
+            return LocalRedirect("~/Equipe");
         }
     }
 }

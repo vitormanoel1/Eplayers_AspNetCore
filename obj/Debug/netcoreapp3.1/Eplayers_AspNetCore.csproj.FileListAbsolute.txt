@@ -71,3 +71,4 @@ C:\Users\fic\Documents\EPlayers_AspNetCore\Eplayers_AspNetCore\obj\Debug\netcore
 C:\Users\fic\Documents\EPlayers_AspNetCore\Eplayers_AspNetCore\obj\Debug\netcoreapp3.1\Eplayers_AspNetCore.csproj.CopyComplete
 C:\Users\winicius\Documents\SENAI_Atividades\Back-end\Eplayers_AspNetCore\obj\Debug\netcoreapp3.1\scopedcss\bundle\Eplayers_AspNetCore.styles.css
 C:\Users\winicius\Documents\SENAI_Atividades\Back-end\Eplayers_AspNetCore\obj\Debug\netcoreapp3.1\Razor\Views\Jogador\Index.cshtml.g.cs
+C:\Users\winicius\Documents\SENAI_Atividades\Back-end\Eplayers_AspNetCore\obj\Debug\netcoreapp3.1\Razor\Views\Login\Index.cshtml.g.cs
